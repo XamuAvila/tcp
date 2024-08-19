@@ -41,6 +41,7 @@ server.on("error", (err) => {
 });
 
 server.on("connection", (socket) => {
+  console.log("client connected");
   clients.push(socket);
 });
 
