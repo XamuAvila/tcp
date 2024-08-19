@@ -1,0 +1,20 @@
+<event how="h-g-i-g-o" stale="2024-08-14T14:20:49.310Z" start="2024-08-14T14:20:34.310Z"
+    time="2024-08-14T14:20:34.310Z" type="a-f-A-M-F-Q-r" uid="uas_id" version="2.0">
+    <detail action="PUSH_AIRCRAFT">
+        <aircraftCreate>
+            <additionalInformation>Mission related to AIS Observations around Peniche Coast</additionalInformation>
+            <initialLatitude>39.34877</initialLatitude>
+            <initialLongitude>-9.320605</initialLongitude>
+            <operator>OperatorID123123</operator>
+            <platformDesignation>AR5-Tester REPMUS1</platformDesignation>
+            <platformUuid>G-TEKR-Tester REPMUS1</platformUuid>
+            <sensorsConfig><!-- static -->
+                <id>EO</id>
+                <model>ModelXPTO</model>
+                <type>EO</type>
+                <uuid>UIDXPTO210</uuid>
+            </sensorsConfig>
+            <timestamp>1723645234312000</timestamp>
+        </aircraftCreate>
+    </detail>
+</event>

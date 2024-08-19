@@ -1,0 +1,13 @@
+<event how="h-g-i-g-o" stale="2024-08-14T14:20:49.310Z" start="2024-08-14T14:20:34.310Z"
+    time="2024-08-14T14:20:34.310Z" type="a-f-A-M-F-Q-r" uid="uas_id" version="2.0">
+    <detail action="PUSH_AIRCRAFT_POSITION">
+        <thalesKLV>
+            <latitude>40.34877</latitude>
+            <longitude>-9.320605</longitude>
+            <altitude>650</altitude>
+            <speedOverGround>25</speedOverGround>
+            <yaw>56</yaw>
+            <timestamp>1723645234312000</timestamp>
+        </thalesKLV>
+    </detail>
+</event>
