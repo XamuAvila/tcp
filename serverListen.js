@@ -15,10 +15,6 @@ const app = express();
 
 const clients = [];
 
-const httpServer = app.listen(3001, "localhost", () => {
-  console.log("server up");
-});
-
 const server = net.createServer(
   {
     host: SERVER_HOST,
@@ -30,9 +26,9 @@ const server = net.createServer(
       // fs.writeFileSync(`./receivedKlvs/${Date.now()}-klv.xml`, data.toString());
     });
 
-    socket.on('error', ()=>{
+    socket.on("error", () => {
       console.log("error ocurred");
-    })
+    });
   }
 );
 
@@ -51,7 +47,7 @@ server.on("connection", (socket) => {
 app.post("/createAircraft", (req, res) => {
   clients.forEach((client) => {
     console.log("emitting for client");
-    createAircraft(client)
+    createAircraft(client);
   });
 
   res.send(200);
@@ -60,12 +56,16 @@ app.post("/createAircraft", (req, res) => {
 app.post("/createPosition", (req, res) => {
   clients.forEach((client) => {
     console.log("emitting for client");
-    createAircraftPosition(client)
+    createAircraftPosition(client);
   });
 
   res.send(200);
 });
 
-server.listen(SERVER_PORT, SERVER_HOST, () => {
-  console.log("listening");
+server.listen(SERVER_PORT, ()=>{
+  console.log("tcp up");
+})
+
+const httpServer = app.listen(3001, () => {
+  console.log("server up");
 });
