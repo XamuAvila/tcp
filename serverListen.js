@@ -5,8 +5,6 @@ const createAircraft = require("./commands/create-aircraft");
 const startMission = require("./commands/start-mission");
 
 const express = require("express");
-const { addSeconds, getDateNano } = require("./utils/time-utils");
-const { PUSH_AIRCRAFT, SENSOR_CONFIG } = require("./constants/constants");
 
 const SERVER_PORT = 8087;
 const SERVER_HOST = "localhost";
@@ -22,7 +20,7 @@ const server = net.createServer(
   },
   (socket) => {
     socket.on("data", (data) => {
-      // console.log(data.toString());
+      console.log(data.toString());
       // fs.writeFileSync(`./receivedKlvs/${Date.now()}-klv.xml`, data.toString());
     });
 

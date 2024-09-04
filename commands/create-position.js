@@ -3,7 +3,7 @@ const createAircraftPosition = (client) => {
   let lat = 39.54877;
   let long = -9.540605;
   let auxDate = Date.now() * 1000;
-  while (count <= 500) {
+  while (count <= 1000) {
     // Create 1000 positions
     console.log("-------------");
     console.log(auxDate);
@@ -20,6 +20,8 @@ const createAircraftPosition = (client) => {
                     <yaw>56</yaw>
                     <timestamp>${auxDate}</timestamp>
                 </thalesKLV>
+                <point lat="43.92141118828272" lon="8.846675096473973" hae="518.3703364614328" ce="9999999"
+        le="9999999" />
             </detail>
         </event>`;
     client.write(text);
