@@ -13,7 +13,7 @@ class RTSPServer(GstRtspServer.RTSPServer):
         # Create a media factory
         self.factory = GstRtspServer.RTSPMediaFactory()
         self.factory.set_launch(
-            "( filesrc location=input.ts ! tsdemux ! h264parse ! rtph264pay name=pay0 pt=96 )"
+            "( filesrc location=/opt/video/sarzana-10.ts ! tsdemux ! h264parse ! rtph264pay name=pay0 pt=96 )"
         )
         self.factory.set_shared(True)
 
